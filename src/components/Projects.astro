@@ -1,18 +1,36 @@
 ---
 import ProjectDetails from "./ProjectDetails.astro"
+import Image1 from '../assets/image1.webp'
+import Image2 from '../assets/image2.webp'
+import Image3 from '../assets/image3.webp'
 const projects = [
   {
     name: "Clima App Zod",
-    demo: "https://github.com/Nico235711/clima-app-zod",
+    demo: "https://climaappzod.netlify.app/",
     github: "https://github.com/Nico235711/clima-app-zod",
-    decription: "Una app de clima que usa Zod para la validación de datos permite a los usuarios obtener información meteorológica en tiempo real de diferentes ubicaciones."
-  }
+    description: "Una app de clima que usa Zod para la validación de datos permite a los usuarios obtener información meteorológica en tiempo real de diferentes ubicaciones.",
+  },
+  {
+    name: "Control-de-Gastos-TS",
+    demo: "https://control-de-gastos-ts.netlify.app/",
+    github: "https://github.com/Nico235711/control-gastos-contextapi",
+    description: "Una app de control de gastos en TypeScript que utiliza Context API permite a los usuarios gestionar sus finanzas de manera eficiente.",
+  },
+  {
+    name: "Pacientes-Zustand-React",
+    demo: "https://pacientes-zustand-react.netlify.app/",
+    github: "https://github.com/Nico235711/pacientes-zustand",
+    description: "Una app de gestión de pacientes en React que utiliza Zustand permite administrar información de pacientes de manera eficiente y sin prop drilling.",
+  },
 ]
 ---
 
-<section class="text-center mt-20 space-y-3">
+<section
+  class="text-center mt-20 space-y-3 w-full"
+  id="projects"
+>
   <h2 class="text-2xl font-bold">Proyectos</h2>
-  <div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
     {
       projects.map(project => (
         <ProjectDetails project={project} />

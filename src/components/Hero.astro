@@ -4,28 +4,40 @@ const socialLinks = [
     name: "Github",
     href: "https://github.com/Nico235711",
     target: "_blank",
-    class: "border-3 border-slate-400 py-1 px-2 rounded-md hover:bg-sky-600 hover:border-sky-600 transition-all"
+    class:
+      "border-3 border-slate-400 py-1 px-2 rounded-md hover:bg-sky-600 hover:border-sky-600 transition-all text-lg",
   },
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/nicolaslopezvidueiros/",
     target: "_blank",
-    class: "border-3 border-slate-400 py-1 px-2 rounded-md hover:bg-sky-600 hover:border-sky-600 transition-all"
-  }
-]
+    class:
+      "border-3 border-slate-400 py-1 px-2 rounded-md hover:bg-sky-600 hover:border-sky-600 transition-all text-lg",
+  },
+];
 ---
 
 <section class="text-center mt-20 space-y-3">
-  <h2 class="text-2xl font-bold">Desarrollador FullStack</h2>
-  <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod reiciendis vero ab qui eaque ex repellendus. Nam culpa aperiam commodi quidem, aliquid exercitationem eligendi nihil eum! Labore, modi neque.</p>
+  <h2 class="text-3xl font-bold">Nicolás Lopez Vidueiros</h2>
+  <p class="text-xl">
+    🚀 Construyendo soluciones digitales desde el frontend hasta el backend.
+  </p>
+  <p class="text-lg">
+    Soy Nico, alguien apasionado por la tecnología y el desarrollo web. Con
+    experiencia en React, Node.js, TypeScript y más, busco crear aplicaciones
+    eficientes y escalables. Mi objetivo es convertirme en un Desarrollador
+    FullStack, combinando diseño intuitivo con un backend robusto.
+  </p>
   <div class="flex gap-5 justify-center mt-8">
     {
-      socialLinks.map(link => (
+      socialLinks.map((link) => (
         <a
           href={`${link.href}`}
           target={`${link.target}`}
           class={`${link.class}`}
-        >{link.name}</a>
+        >
+          {link.name}
+        </a>
       ))
     }
   </div>

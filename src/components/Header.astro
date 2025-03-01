@@ -19,9 +19,9 @@ const internalLinks = [
 ---
 
 <header class="bg-slate-900 py-10 text-white">
-  <div class="w-[500px] mx-auto flex flex-col items-center mt-5 md:flex-row md:justify-between space-y-5">
-    <h1 class="text-3xl font-bold">Nicolás Lopez Vidueiros</h1>
-    <nav class="flex flex-col items-center gap-3 text-lg">
+  <div class="container mx-auto flex flex-col items-center justify-center mt-5 md:flex-row md:justify-between space-y-5 md:space-y-0">
+    <h1 class="text-4xl font-bold text-center">Nicolás Lopez Vidueiros</h1>
+    <nav class="flex flex-col items-center md:flex-row gap-3 text-lg">
       {internalLinks.map(link => (
         <a href={link.href} class={`${link.class}`}>{link.name}</a>
       ))}
