@@ -1,0 +1,33 @@
+---
+
+interface Props {
+  experience: {
+    name: string
+    position: string
+    date: string
+    description: string
+    project: string
+    tasks: string[]
+  }
+}
+
+const { experience } = Astro.props
+const { tasks, project, description, date, position, name } = experience
+---
+
+<div class="space-y-3 border-4 border-slate-300 p-5 text-left rounded-md grid grid-cols-1">
+  <div class="border-b-2 border-slate-900">
+    <h3 class="text-2xl font-black">{name}</h3>
+    <p class="text-xl">{position}</p>
+    <p>{date}</p>
+  </div>
+  <p class="text-lg font-bold">{project}</p>
+  <p>{description}</p>
+  <ul class="list-disc pl-5 space-y-2">
+    {
+      tasks.map(task => (
+        <li>{task}</li>
+      ))
+    }
+  </ul>
+</div>

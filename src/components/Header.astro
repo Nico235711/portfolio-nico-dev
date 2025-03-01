@@ -1,0 +1,30 @@
+---
+const internalLinks = [
+  {
+    name: "Experiencia",
+    href: "#experience",
+    class: "hover:text-sky-600",
+  },
+  {
+    name: "Proyectos",
+    href: "#projects",
+    class: "hover:text-sky-600",
+  },
+  {
+    name: "Contacto",
+    href: "#contact",
+    class: "hover:text-sky-600",
+  },
+]
+---
+
+<header class="bg-slate-900 py-10 text-white">
+  <div class="w-[500px] mx-auto flex flex-col items-center mt-5 md:flex-row md:justify-between space-y-5">
+    <h1 class="text-3xl font-bold">Nicolás Lopez Vidueiros</h1>
+    <nav class="flex flex-col items-center gap-3 text-lg">
+      {internalLinks.map(link => (
+        <a href={link.href} class={`${link.class}`}>{link.name}</a>
+      ))}
+    </nav>
+  </div>
+</header>

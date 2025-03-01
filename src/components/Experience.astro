@@ -1,0 +1,27 @@
+---
+import ExperienceDetails from "./ExperienceDetails.astro";
+
+const experiences = [
+  {
+    name: "Igrowker | Junior IT Training",
+    position: "Desarrollador Frontend",
+    date: "📅 Noviembre 2024 - Diciembre 2024",
+    description:
+      "Seleccionado para participar en un proyecto internacional con desarrolladores argentinos y españoles.",
+    project: "Proyecto: Programa Junior Igrowker: Adopción de mascotas.",
+    tasks: [
+      "Reuniones diarias y semanales para reportar actividades frontend.",
+      "Refatorización de lógica para separala del componente",
+    ],
+  },
+];
+---
+
+<section class="text-center mt-20 space-y-3">
+  <h2 class="text-2xl font-bold">Experiencia Reciente</h2>
+  {
+    experiences.map((experience) => (
+      <ExperienceDetails experience={experience} />
+    ))
+  }
+</section>
