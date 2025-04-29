@@ -10,6 +10,8 @@ import Projects from "@/components/Projects.astro";
 import SectionContainer from "@/components/SectionContainer.astro";
 import Hero from "@/components/Hero.astro";
 import TitleSection from "@/components/TitleSection.astro";
+import Contributions from "@/components/Contributions.astro";
+import GitHub from "@/components/icons/GitHub.astro";
 ---
 
 <Layout
@@ -35,8 +37,15 @@ import TitleSection from "@/components/TitleSection.astro";
         <CodeIcon class="size-7" />
         Proyectos
       </TitleSection>
-      <span>En construcción...</span>
-      <!-- <Projects /> -->
+      <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="contribuciones">
+      <TitleSection>
+        <GitHub class="size-7" />
+        Contribuciones de GitHub
+      </TitleSection>
+      <Contributions />
     </SectionContainer>
 
     <SectionContainer id="sobre-mi">

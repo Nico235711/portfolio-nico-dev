@@ -1,7 +1,5 @@
 ---
 import GitHub from "./icons/GitHub.astro";
-import NextJS from "./icons/NextJS.astro";
-import Tailwind from "./icons/Tailwind.astro";
 import Link from "./icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
 
@@ -9,31 +7,38 @@ const TAGS = {
   NEXT: {
     name: "Next.js",
     class: "bg-black text-white",
-    icon: NextJS,
   },
   TAILWIND: {
     name: "Tailwind CSS",
     class: "bg-[#003159] text-white",
-    icon: Tailwind,
+  },
+  REACT: {
+    name: "React",
+    class: "bg-[#003159] text-white",
+  },
+  REACTHOOKFORM: {
+    name: "React Hook Form",
+    class: "bg-[#003159] text-white",
   },
 };
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "PatientCare: Gestión Simple de Pacientes",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "PatientCare es una aplicación web ligera diseñada para registrar, editar y eliminar datos de pacientes de manera rápida y eficiente. Utiliza Zustand para la gestión global del estado y localStorage para almacenar la información de forma persistente en el navegador, garantizando acceso inmediato sin necesidad de servidores.",
+    link: "https://pacientes-zustand-react.netlify.app/",
+    github: "https://github.com/Nico235711/pacientes-zustand",
+    image: "/projects/project_1.webp",
+    tags: [TAGS.REACT, TAGS.TAILWIND],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Fintrack: Control Inteligente de Tus Gastos",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Fintrack es una aplicación web para gestionar tus gastos de forma ágil e intuitiva. Utiliza Context API combinado con useReducer para un manejo de estado robusto y escalable, y guarda tus movimientos en localStorage para conservar la información de manera segura. Además, gracias a react-swipeable-list, puedes deslizar para editar o eliminar gastos, haciendo la experiencia aún más fluida desde dispositivos móviles.",
+    link: "https://control-de-gastos-ts.netlify.app/",
+    github: "https://github.com/Nico235711/control-gastos-contextapi",
+    image: "/projects/project_2.webp",
+    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.REACTHOOKFORM],
   },
 ];
 ---
@@ -43,10 +48,10 @@ const PROJECTS = [
     PROJECTS.map(({ image, title, description, tags, link, github }) => (
       <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
         <div class="w-full md:w-1/2">
-          <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+          <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
             <img
-              alt="Recién llegado vs 5 años en Nueva Zelanda"
-              class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+              alt="PatientCare: Gestión Simple de Pacientes"
+              class="object-cover object-top w-full h-56 sm:h-full"
               loading="lazy"
               src={image}
             />
@@ -64,7 +69,6 @@ const PROJECTS = [
                   <span
                     class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
                   >
-                    <tag.icon class="size-4" />
                     {tag.name}
                   </span>
                 </li>
