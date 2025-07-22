@@ -3,41 +3,12 @@
 
 :root {
   /* God of War Ragnarök Dark Mode (default) */
-  --background: hsl(220, 10%, 10%); /* Deep, cold blue-grey */
-  --foreground: hsl(200, 20%, 80%); /* Muted, icy blue-white */
-  --card-bg: hsl(220, 10%, 15%); /* Slightly lighter dark card background */
-  --card-foreground: hsl(200, 20%, 80%);
-  --primary: hsl(0, 60%, 30%); /* Desaturated, deep red/maroon */
-  --primary-foreground: hsl(40, 50%, 70%); /* Muted gold/bronze */
-  --secondary: hsl(210, 5%, 20%); /* Dark, cold grey */
-  --secondary-foreground: hsl(0, 0%, 100%);
-  --muted: hsl(210, 5%, 30%); /* Slightly lighter cold grey */
-  --muted-foreground: hsl(210, 5%, 60%);
-  --accent: hsl(200, 50%, 50%); /* Icy blue */
-  --accent-foreground: hsl(0, 0%, 100%);
-  --border: hsl(220, 10%, 25%); /* Dark, cold border */
-  --input-bg: hsl(220, 10%, 15%); /* Very dark grey input background */
-  --input-text: hsl(200, 20%, 80%);
-  --radius: 0.5rem;
-}
-
-body.light-mode {
-  /* God of War Ragnarök Light Mode */
-  --background: hsl(200, 10%, 90%); /* Muted, light blue-grey */
-  --foreground: hsl(220, 10%, 20%); /* Dark, cold blue-grey */
-  --card-bg: hsl(200, 10%, 95%); /* Very light blue-grey card background */
-  --card-foreground: hsl(220, 10%, 20%);
-  --primary: hsl(0, 50%, 40%); /* Muted, deep red */
-  --primary-foreground: hsl(40, 40%, 80%); /* Light, desaturated gold */
-  --secondary: hsl(210, 5%, 70%); /* Light grey */
-  --secondary-foreground: hsl(0, 0%, 100%);
-  --muted: hsl(210, 5%, 80%); /* Lighter grey */
-  --muted-foreground: hsl(210, 5%, 40%);
-  --accent: hsl(200, 40%, 60%); /* Muted icy blue */
-  --accent-foreground: hsl(0, 0%, 100%);
-  --border: hsl(210, 10%, 60%); /* Muted blue-grey border */
-  --input-bg: hsl(200, 10%, 95%); /* Very light grey input background */
-  --input-text: hsl(220, 10%, 20%);
+  --bg: #0d1117;
+  --bg-card: #1c1f26;
+  --text: #ffffff;
+  --text-secondary: #c9d1d9;
+  --accent-blue: #7fdbff;
+  --accent-red: #ff4f4f;
 }
 
 /* Base Styles */
@@ -49,7 +20,6 @@ body.light-mode {
 
 body {
   font-family: "Roboto", sans-serif; /* Default body font */
-  color: var(--foreground);
   line-height: 1.6;
   min-height: 100vh;
   position: relative; /* For fixed background */
@@ -76,11 +46,9 @@ body {
 .header {
   position: sticky;
   top: 0;
-  /* z-index: 50; */
   border-bottom: 1px solid var(--border);
-  background-color: hsla(var(--background-h), var(--background-s), var(--background-l), 0.95); /* Using hsla for backdrop-blur effect */
-  backdrop-filter: blur(8px); /* Simulate backdrop-blur */
-  -webkit-backdrop-filter: blur(8px); /* For Safari */
+  background: linear-gradient(to right, var(--accent-blue) 0, (var(--accent-blue)/20) 100%); 
+  backdrop-filter: blur(8px);
   height: 3.5rem;
   display: flex;
   align-items: center;
@@ -96,7 +64,7 @@ body {
   font-family: "Cinzel", serif; /* Thematic font for logo */
   font-weight: 700;
   font-size: 1.5rem;
-  color: var(--primary);
+  color: var(--accent-red);
   text-decoration: none;
   margin-right: 1rem;
 }
