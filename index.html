@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicolás Lopez Vidueiros</title>
+    <meta
+      name="description"
+      content="A God of War-themed portfolio showcasing trials, triumphs, and divine arsenal."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="dark-mode">
+    <div class="background-image"></div>
+
+    <header class="header">
+      <div class="container header-content">
+        <div class="logo">
+          <a href="#home">Nico's Domain</a>
+        </div>
+        <nav class="nav">
+          <a href="#about">The Godslayer</a>
+          <a href="#projects">Trials & Triumphs</a>
+          <a href="#contact">Summon the Oracle</a>
+        </nav>
+        <button id="theme-toggle" class="button button-icon theme-toggle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="sun-icon"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2" />
+            <path d="M12 20v2" />
+            <path d="M4.93 4.93l1.41 1.41" />
+            <path d="M17.66 17.66l1.41 1.41" />
+            <path d="M2 12h2" />
+            <path d="M20 12h2" />
+            <path d="M4.93 19.07l1.41-1.41" />
+            <path d="M17.66 6.34l1.41-1.41" />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="moon-icon"
+          >
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+          </svg>
+          <!-- <span class="sr-only">Toggle theme</span> -->
+        </button>
+      </div>
+    </header>
+
+    <main class="container main-content">
+      <section id="about" class="section">
+        <div class="section-content text-center">
+          <h1 class="heading-primary">
+            Architect of Chaos, Forger of Digital Destinies
+          </h1>
+          <p class="subheading">
+            Wielding the Blades of Code and the Leviathan Axe of Logic, I carve
+            paths through the digital realms. My creations stand as monuments to
+            power and precision.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://github.com"
+              target="_blank"
+              class="button button-outline button-icon"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-github"
+              >
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.44-.78-3.46 0 0-1.09 0-3 1.5a10.4 10.4 0 0 0-1.5-1.5c-1.65 0-3.3 0-4.5 1.5a10.4 10.4 0 0 0-1.5-1.5c-2 0-3 1.5-3 1.5-.5.92-.9 2.1-.7 3.46 0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.2-.22 1.8v4"
+                />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg>
+              <span class="sr-only">GitHub</span>
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              class="button button-outline button-icon"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-linkedin"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+              <span class="sr-only">LinkedIn</span>
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              class="button button-outline button-icon"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-twitter"
+              >
+                <path
+                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                />
+              </svg>
+              <span class="sr-only">Twitter</span>
+            </a>
+            <a
+              href="mailto:hello@example.com"
+              class="button button-outline button-icon"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-mail"
+              >
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+              <span class="sr-only">Email</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container section-content">
+          <h2 class="heading-secondary text-center">Trials & Triumphs</h2>
+          <div class="grid-3-cols">
+            <div class="project-card">
+              <div class="project-image-container">
+                <img
+                  src="/placeholder.svg?height=400&width=600"
+                  alt="Realm Exploration System"
+                  class="project-image"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Realm Exploration System</h3>
+                <p class="card-description">
+                  A vast digital realm mapping system, guiding adventurers
+                  through treacherous Norse lands.
+                </p>
+                <div class="tags">
+                  <span class="tag">Next.js</span>
+                  <span class="tag">Prisma</span>
+                  <span class="tag">Stripe</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  class="link-button"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-github"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.44-.78-3.46 0 0-1.09 0-3 1.5a10.4 10.4 0 0 0-1.5-1.5c-1.65 0-3.3 0-4.5 1.5a10.4 10.4 0 0 0-1.5-1.5c-2 0-3 1.5-3 1.5-.5.92-.9 2.1-.7 3.46 0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.2-.22 1.8v4"
+                    />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                  </svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image-container">
+                <img
+                  src="/placeholder.svg?height=400&width=600"
+                  alt="Axe Forging Simulator"
+                  class="project-image"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Axe Forging Simulator</h3>
+                <p class="card-description">
+                  A powerful tool for crafting legendary weapons, imbued with
+                  runic enchantments and elemental might.
+                </p>
+                <div class="tags">
+                  <span class="tag">React</span>
+                  <span class="tag">Node.js</span>
+                  <span class="tag">Socket.io</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  class="link-button"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-github"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.44-.78-3.46 0 0-1.09 0-3 1.5a10.4 10.4 0 0 0-1.5-1.5c-1.65 0-3.3 0-4.5 1.5a10.4 10.4 0 0 0-1.5-1.5c-2 0-3 1.5-3 1.5-.5.92-.9 2.1-.7 3.46 0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.2-.22 1.8v4"
+                    />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                  </svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image-container">
+                <img
+                  src="/placeholder.svg?height=400&width=600"
+                  alt="Mythological Bestiary Database"
+                  class="project-image"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Mythological Bestiary Database</h3>
+                <p class="card-description">
+                  An extensive compendium of beasts and gods, detailing their
+                  weaknesses and strengths for the aspiring godslayer.
+                </p>
+                <div class="tags">
+                  <span class="tag">OpenAI</span>
+                  <span class="tag">Next.js</span>
+                  <span class="tag">TailwindCSS</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  class="link-button"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-github"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.44-.78-3.46 0 0-1.09 0-3 1.5a10.4 10.4 0 0 0-1.5-1.5c-1.65 0-3.3 0-4.5 1.5a10.4 10.4 0 0 0-1.5-1.5c-2 0-3 1.5-3 1.5-.5.92-.9 2.1-.7 3.46 0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.2-.22 1.8v4"
+                    />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                  </svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container section-content">
+          <h2 class="heading-secondary text-center">Divine Arsenal</h2>
+          <div class="grid-2-cols">
+            <div class="tech-card">
+              <h3 class="tech-category-title">Ancient Runes (Frontend)</h3>
+              <div class="tech-skills">
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Next.js</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">TailwindCSS</span>
+                <span class="skill-tag">Redux</span>
+                <span class="skill-tag">GraphQL</span>
+              </div>
+            </div>
+            <div class="tech-card">
+              <h3 class="tech-category-title">Olympian Architect (Backend)</h3>
+              <div class="tech-skills">
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Express</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Django</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">MongoDB</span>
+              </div>
+            </div>
+            <div class="tech-card">
+              <h3 class="tech-category-title">Valhalla's Forge (DevOps)</h3>
+              <div class="tech-skills">
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">CI/CD</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Linux</span>
+                <span class="skill-tag">Nginx</span>
+              </div>
+            </div>
+            <div class="tech-card">
+              <h3 class="tech-category-title">Divine Tools</h3>
+              <div class="tech-skills">
+                <span class="skill-tag">VS Code</span>
+                <span class="skill-tag">Postman</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Jest</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">Vercel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container section-content max-w-2xl">
+          <h2 class="heading-secondary text-center">Summon the Oracle</h2>
+          <div class="contact-form-card">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name (or Godly Title)</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Oracle's Channel (Email)</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Your Plea to the Gods</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="button button-primary">
+                Send Divine Message
+              </button>
+              <p id="form-message" class="form-message"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p class="footer-text">
+          © <span id="current-year"></span> Kratos's Domain. All rights forged
+          in the fires of Olympus.
+        </p>
+        <nav class="footer-nav">
+          <a href="#" class="footer-link">Oaths of Service</a>
+          <a href="#" class="footer-link">Secrets of the Gods</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
