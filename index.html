@@ -4,22 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nicolás Lopez Vidueiros</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-    <div class="glass-card">
-      <h1 class="animated">Nicolás López</h1>
-      <p class="subtitle">
-        Desarrollador Full Stack | Apasionado por la tecnología
-      </p>
-
-      <div class="buttons">
-        <a href="views/projects.html" class="btn">Proyectos</a>
-        <a href="views/experience.html" class="btn">Experiencia</a>
-        <a href="#contact" class="btn">Contacto</a>
+  <body class="dark-mode">
+    <header class="header">
+      <a href="#">Nico.dev</a>
+      <nav class="header__nav">
+        <a href="#">Sobre Mí</a>
+        <a href="#">Experiencia</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#">Tecnologías</a>
+      </nav>
+      <div class="header__toggle">
+        <button type="button" id="header__toggle--theme">tema</button>
+        <button type="button" id="header__toggle--language">idioma</button>
       </div>
-    </div>
+    </header>
+    <main class="main container">
+      <section class="hero">
+        <h1>Fullstack Developer</h1>
+        <p>Building digital experiences with modern technologies. Focused on creating elegant solutions to complex problems.</p>
+        <div class="hero__links">
+          <a href="#">github</a>
+          <a href="#">linkedin</a>
+          <a href="#">contacto</a>
+        </div>
+      </section>
+      <section id="projects" class="projects">
 
-    <script src="script.js"></script>
+      </section>
+    </main>
   </body>
 </html>
