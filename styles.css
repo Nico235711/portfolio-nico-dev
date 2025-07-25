@@ -9,7 +9,7 @@ html {
 }
 
 .container {
-  width: min(120rem, 95%);
+  width: min(120rem, 90%);
   margin: 0 auto;
 }
 
@@ -59,29 +59,43 @@ body {
   gap: 2rem;
 }
 
+.header__toggle {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
 .header__toggle button {
   padding: .5rem 2rem;
   background-color: transparent;
-  color: firebrick;
   border: none;
+  cursor: pointer;
 }
 
-.main {
+
+section {
+  border-bottom: .2rem solid var(--background-secondary);
+}
+
+.hero {
   margin-top: 5rem;
   display: flex;
-  place-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--background-secondary);
   padding: 5rem;
   border-radius: .3rem;
 }
-.main h1 {
+.hero h1 {
   text-align: center;
   font-size: 3.8rem;
   margin-bottom: 2rem;
 }
 
-.main p {
+.hero p {
   font-size: 1.8rem;
+  text-align: center;
 }
 
 .hero__links {
@@ -89,4 +103,16 @@ body {
   place-content: center;
   margin-top: 3rem;
   gap: 3rem;
+}
+
+/* === Projects === */
+.projects {
+  margin-top: 3rem;
+}
+
+.projects__container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5rem;
 }
